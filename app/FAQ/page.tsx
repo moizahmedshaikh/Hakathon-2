@@ -1,14 +1,16 @@
 import React from 'react'
 import Hero from "./Hero"
+import FAQPage from "./FAQpage"
 import Nav2 from '@/components/Nav2'
 
-const Contact = () => {
+const FAQpage = () => {
   return (
-    <div>
+    <div> 
       <Nav2/>
       <Hero />
+      <FAQPage />
     </div>
   )
 }
 
-export default Contact
+export default FAQpage

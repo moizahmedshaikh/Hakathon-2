@@ -10,8 +10,8 @@ export default function Footer() {
     <footer className="bg-[#0D0D0D] text-white">
       <div className="container mx-auto px-4 py-16 flex flex-col gap-8">
         <NewsletterSection />
-        <div className="border-t border-[#FF9F0D] my-8"></div>
-        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-8 mt-[56px]">
+        <div className="border-t border-[#FF9F0D] my-6"></div>
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-8 mt-[16px]">
           <AboutUsSection />
           <UsefulLinksSection />
           <HelpSection />

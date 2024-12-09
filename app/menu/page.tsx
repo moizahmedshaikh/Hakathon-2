@@ -1,4 +1,5 @@
 import HeroMenu from '@/components/HeroMenu';
+import Nav2 from '@/components/Nav2';
 import { menuItems } from '@/constant/Dessert';
 import { DrinksItem } from '@/constant/Drink';
 import { MainCoursItem } from '@/constant/MainCourse';
@@ -8,8 +9,8 @@ import Image from 'next/image';
 
 const Menu = () => {
   return (
-    <section className="w-full mx-auto mt-[80px] sm:mt-[120px] px-4 sm:px-6 lg:px-8">
-      {/* <Nav2/> */}
+    <section className="w-full">
+      <Nav2/>
       {/* Hero Section */}
       <HeroMenu />
 

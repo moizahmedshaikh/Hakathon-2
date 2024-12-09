@@ -12,7 +12,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const Navbar = () => {
   return (
-    <nav className="max-w-[1320px] mx-auto py-10 md:px-7 px-4">
+    <nav className="max-w-[1320px] mx-auto pt-10 md:px-7 px-4">
       <div className="pb-3">
         <h1 className="font-[700] hidden lg:block text-center text-[34px] leading-[34px]">
           <span className="text-textp">Food</span>tuck
@@ -59,7 +59,9 @@ const Navbar = () => {
             />
             <IoSearch className="absolute top-2 right-4 text-2xl" />
           </div>
-          <ShoppingBagIcon className="text-white w-6 lg:block hidden" />
+          <Link href={"/shop/shopingCart"}>
+            <ShoppingBagIcon className="text-white w-6 lg:block hidden" />
+          </Link>
           <div>
             <Sheet>
               <SheetTrigger>
@@ -70,7 +72,10 @@ const Navbar = () => {
               <SheetContent>
                 <div className="mt-28">
                   <div className="flex justify-center gap-5 mb-10">
-                    <ShoppingBagIcon className=" w-10" />
+                    <Link href={"/shop/shopingCart"}>
+                      <ShoppingBagIcon className=" w-10" />
+                    </Link>
+
                     <div className="relative">
                       <input
                         type="text"

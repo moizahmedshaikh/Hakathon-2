@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import {Inter} from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer/Footer";
-import Navbar from "@/components/Navbar";
 
 
 const font = Inter({
@@ -25,8 +24,7 @@ export default function RootLayout({
       <body
         className={`${font.className} ${font.className} antialiased`}
       >
-        <div className="max-w-[1920px] mx-auto bg-[#0D0D0DF2] text-white">
-          <Navbar/>
+        <div className="max-w-[1920px] mx-auto text-white">
         {children}
         <Footer/>
         </div>

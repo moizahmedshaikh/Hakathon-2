@@ -1,13 +1,14 @@
-import AbountUs from '@/components/AboutUs'
+
 
 import React from 'react'
 import Hero from './Hero'
+import Nav2 from '@/components/Nav2'
 
 const About = () => {
   return (
     <div>
+      <Nav2/>
         <Hero/>
-        <AbountUs/>
         </div>
   )
 }
