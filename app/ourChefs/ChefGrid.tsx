@@ -1,31 +1,33 @@
-import React from "react";
 import Image from "next/image";
-import img1 from "@/public/chef1.png";
-import img2 from "@/public/chef1.png";
-import img3 from "@/public/chef1.png";
-import img4 from "@/public/chef1.png";
-import img5 from "@/public/chef1.png";
+
 
 const chefs = [
-  { name: "Tahmina Rumi", role: "Chef", image: img1 },
-  { name: "Jorina Begum", role: "Chef", image: img2 },
-  { name: "M. Mohammad", role: "Chef", image: img3 },
-  { name: "Munna Kathy", role: "Chef", image: img4 },
-  { name: "Tahmina Rumi", role: "Cook", image: img4 },
-  { name: "Bisnu Devgon", role: "Chef", image: img5 },
+  { name: "Tahmina Rumi", role: "Chef", image: "/pic1.png" },
+  { name: "Jorina Begum", role: "Chef", image: "/pic2.png" },
+  { name: "M. Mohammad", role: "Chef", image: "/pic3.png" },
+  { name: "Munna Kathy", role: "Chef", image: "/pic4.png" },
+  { name: "Tahmina Rumi", role: "Cook", image: "/pic5.png" },
+  { name: "Bisnu Devgon", role: "Chef", image: "/pic6.png" },
+  { name: "Bisnu Devgon", role: "Chef", image: "/pic7.png" },
+  { name: "Bisnu Devgon", role: "Chef", image: "/pic8.png" },
+  { name: "Bisnu Devgon", role: "Chef", image: "/pic9.png" },
+  { name: "Bisnu Devgon", role: "Chef", image: "/pic10.png" },
+  { name: "Bisnu Devgon", role: "Chef", image: "/pic11.png" },
+  { name: "Bisnu Devgon", role: "Chef", image: "/pic12.png" },
+
 ];
 
 const ChefGrid = () => {
   return (
-    <div className="p-6 mt-20">
+    <div className="py-20 px-10 max-w-[1320px] mx-auto mt-10">
       {" "}
       {/* Adding mt-20 for margin top */}
       {/* Grid with responsive columns */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6">
         {chefs.map((chef, index) => (
           <div
             key={index}
-            className={`relative overflow-hidden rounded-lg shadow-lg bg-white flex flex-col transition-transform transform hover:scale-105 hover:shadow-xl ${
+            className={`relative overflow-hidden rounded-lg bg-white flex flex-col transition-transform transform hover:scale-105 hover:shadow-xl ${
               index === 6
                 ? "border-4 border-purple-600" // Complete purple border for the 7th box
                 : "border-4 border-transparent hover:border-purple-600" // Hover effect for other boxes
@@ -55,3 +57,5 @@ const ChefGrid = () => {
 };
 
 export default ChefGrid;
+
+

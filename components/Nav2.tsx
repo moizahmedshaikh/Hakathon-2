@@ -58,10 +58,11 @@ const Nav2 = () => {
         <div className=" flex items-center gap-2 ">
           <div className="flex gap-3 items-center">
             <IoSearch className=" text-white w-6 lg:block hidden" />
-            <UserIcon className=" text-white w-6 lg:block hidden" />
+            <Link href={"/signin"}>
+              <UserIcon className=" text-white w-6 lg:block hidden" />
+            </Link>
             <Link href={"/shop/shopingCart"}>
-
-            <ShoppingBagIcon className="text-white w-6 lg:block hidden" />
+              <ShoppingBagIcon className="text-white w-6 lg:block hidden" />
             </Link>
           </div>
           <div>
@@ -73,9 +74,12 @@ const Nav2 = () => {
               </SheetTrigger>
               <SheetContent>
                 <div className="mt-28">
-                  <div className="flex justify-center gap-5 mb-10">
-                  <Link href={"/shop/shopingCart"}>
+                  <div className="flex justify-center items-center gap-5 mb-10">
+                    <Link href={"/shop/shopingCart"}>
                       <ShoppingBagIcon className=" w-10" />
+                    </Link>
+                    <Link href={"/signin"}>
+                      <UserIcon className=" text-black w-9 " />
                     </Link>
                     <div className="relative">
                       <input

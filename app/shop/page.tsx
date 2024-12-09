@@ -1,12 +1,13 @@
 import React from 'react'
-import Hero from "./Hero"
 import Nav2 from '@/components/Nav2'
+import HeroLinks from '@/components/HeroLinks'
 
 const Shop = () => {
   return (
     <div>
       <Nav2/>
-      <Hero />
+      <HeroLinks heading='Our Shop' url1='Home' url2='Shop'/>
+
     </div>
   )
 }

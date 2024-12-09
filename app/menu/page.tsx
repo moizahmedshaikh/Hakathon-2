@@ -1,4 +1,4 @@
-import HeroMenu from '@/components/HeroMenu';
+import HeroLinks from '@/components/HeroLinks';
 import Nav2 from '@/components/Nav2';
 import { menuItems } from '@/constant/Dessert';
 import { DrinksItem } from '@/constant/Drink';
@@ -12,7 +12,8 @@ const Menu = () => {
     <section className="w-full">
       <Nav2/>
       {/* Hero Section */}
-      <HeroMenu />
+      <HeroLinks heading='Our Menu' url1='Home' url2='Menu'/>
+
 
       {/* Starter Menu */}
       <div className="container mx-auto py-10 sm:py-16 flex flex-col lg:flex-row gap-8 lg:gap-12">

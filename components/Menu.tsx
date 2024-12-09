@@ -3,7 +3,6 @@ import { DrinksItem } from '@/constant/Drink'
 import { MainCoursItem } from '@/constant/MainCourse'
 import { Coffee } from 'lucide-react'
 import Image from 'next/image'
-import HeroMenu from './HeroMenu'
 interface HeadingProps {
   text: string;
 }
@@ -19,7 +18,6 @@ const Menu = () => {
     <section className="w-full mx-auto mt-[80px] sm:mt-[120px] px-4 sm:px-6 lg:px-8">
   {/* Starter Menu */}
 
-  <HeroMenu/>
 
 
   <div className="container mx-auto py-10 sm:py-16 flex flex-col lg:flex-row gap-8 lg:gap-12">
