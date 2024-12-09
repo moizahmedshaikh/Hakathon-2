@@ -2,6 +2,7 @@ import HeroLinks from '@/components/HeroLinks'
 import Nav2 from '@/components/Nav2'
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 const SignIn = () => {
   return (
     <div>
@@ -46,6 +47,7 @@ const SignIn = () => {
             className="w-full bg-orange-500 text-white py-2 rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400"
           >
             {/* <Link href='/signup'> */}
+            <Link href={"/signup"}>Sign Up</Link>
             Sign Up
           </button>
         </form>

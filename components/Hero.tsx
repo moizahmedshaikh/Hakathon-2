@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -20,7 +21,8 @@ const Hero = () => {
             variant={"default"}
             className=" text-white md:w-[200px] md:h-[56px] w-[200px] h-[50px] my-5 text-[16px] rounded-full"
           >
-            See Menu
+            <Link href={"/menu"}>See Menu</Link>
+            
           </Button>
           </div>
         </div>

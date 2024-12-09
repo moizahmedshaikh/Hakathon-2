@@ -84,7 +84,6 @@ export default function Home() {
 
       <Review />
 
-      <FoodSection />
     </div>
   );
 }

@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 
 import { FaCheck } from "react-icons/fa6";
+import Link from "next/link";
 
 function AbountUs() {
   return (
@@ -50,7 +51,7 @@ function AbountUs() {
 
           <div className="flex flex-col md:flex-row items-center md:items-start">
             <button className="bg-[#FF9F0D] text-white w-[100px] h-[30px] md:w-[190px] md:h-[60px] rounded-[40px] mt-[32px] hover:bg-yellow-800">
-              See More
+              <Link href={"/about"}>See more</Link>
             </button>
           </div>
         </div>

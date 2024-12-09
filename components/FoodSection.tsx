@@ -41,11 +41,12 @@ const FoodSection = () => {
       {/* Right Text Section */}
       <div className="w-full lg:w-1/2 mt-8 lg:mt-0 lg:ml-8">
         {/* Heading */}
-        <h3 className="text-[#FF9F0D] text-lg font-semibold">About us</h3>
-        <h1 className="text-gray-800 text-3xl md:text-4xl font-bold mt-4">
-          Food is an important part Of a balanced Diet
+        <h3 className="text-[#FF9F0D] text-lg font-semibold">Why Choose us</h3>
+        <h1 className="text-white text-3xl md:text-4xl font-bold mt-4">
+        Exta ordinary taste
+        And Experienced 
         </h1>
-        <p className="text-gray-600 text-sm md:text-base mt-4 leading-relaxed">
+        <p className="text-gray-100 text-sm md:text-base mt-4 leading-relaxed">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam
           pellentesque bibendum non dui volutpat fringilla bibendum. Urna, elit
           augue urna, vitae feugiat pretium donec id elementum. Ultrices mattis

@@ -16,7 +16,7 @@ const Menu = () => {
 
 
       {/* Starter Menu */}
-      <div className="container mx-auto py-10 sm:py-16 flex flex-col lg:flex-row gap-8 lg:gap-12">
+      <div className="container mx-auto py-10 px-8 sm:py-16 flex flex-col lg:flex-row gap-8 lg:gap-12">
         {/* Image Section */}
         <div className="w-full lg:w-[448px] mb-6 lg:mb-0">
           <Image
@@ -56,7 +56,7 @@ const Menu = () => {
       </div>
 
       {/* Main Course */}
-      <div className="container mx-auto py-10 sm:py-16 flex flex-col lg:flex-row-reverse gap-8 lg:gap-12">
+      <div className="container mx-auto py-10 px-8 sm:py-16 flex flex-col lg:flex-row-reverse gap-8 lg:gap-12">
         {/* Image Section */}
         <div className="w-full lg:w-[448px] mb-6 lg:mb-0">
           <Image
@@ -96,7 +96,7 @@ const Menu = () => {
       </div>
 
       {/* Dessert */}
-      <div className="container mx-auto py-10 sm:py-16 flex flex-col lg:flex-row gap-8 lg:gap-12">
+      <div className="container mx-auto py-10 px-8 sm:py-16 flex flex-col lg:flex-row gap-8 lg:gap-12">
         {/* Image Section */}
         <div className="w-full lg:w-[448px] mb-6 lg:mb-0">
           <Image
@@ -130,7 +130,7 @@ const Menu = () => {
       </div>
 
       {/* Drinks */}
-      <div className="container mx-auto py-10 sm:py-16 flex flex-col lg:flex-row-reverse gap-8 lg:gap-12">
+      <div className="container mx-auto py-10 px-8 sm:py-16 flex flex-col lg:flex-row-reverse gap-8 lg:gap-12">
         {/* Image Section */}
         <div className="w-full lg:w-[448px] mb-6 lg:mb-0">
           <Image
