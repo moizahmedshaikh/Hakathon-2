@@ -21,7 +21,7 @@ export default function Footer() {
       <div className="bg-[#4F4F4F] py-8 flex">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
           <p className="text-[16px] leading-6 mb-4 md:mb-0">
-            Copyright © 2022 by Ayeman. All Rights Reserved.
+            Copyright © 2022 by Moiz Ahmed. All Rights Reserved.
           </p>
           <SocialIcons />
         </div>
