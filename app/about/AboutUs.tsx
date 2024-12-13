@@ -33,7 +33,7 @@ export default function Aboutus() {
           </div>
           {/* Text Content and Buttons */}
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 className="text-sm mb-4 font-medium text-yellow-400 italic">
+            <h1 className="text-2xl mb-4 Headdesign text-yellow-400 italic">
               About us _____
             </h1>
             <p className="text-black title-font text-3xl font-bold">

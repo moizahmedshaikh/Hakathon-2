@@ -4,9 +4,9 @@ import Image from 'next/image';
 const Review = () => {
   return (
     <div>
-        <div className='flex max-w-[1273px] mx-auto flex-col gap-2 py-6'>
+        <div className='flex max-w-[1273px] mx-auto flex-col gap-2 py-6 px-6'>
             <p className='text-3xl Headdesign text-textp'>Testimonials</p>
-            <h1 className='text-5xl Headings font-bold'>What our client are saying</h1>
+            <h1 className='lg:text-5xl md:text-4xl text-3xl Headings font-bold'>What our client are saying</h1>
         </div>
     <div className="flex items-center justify-center py-24 px-4">
       <div className="relative bg-white max-w-[600px] mx-auto shadow-md py-10 px-8 text-center">

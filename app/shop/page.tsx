@@ -2,59 +2,39 @@ import React from "react";
 import Nav2 from "@/components/Nav2";
 import HeroLinks from "@/components/HeroLinks";
 import Image from "next/image";
+import Link from "next/link";
+import { products } from "@/constant/products";
+
+
 
 const Shop = () => {
-  const chefs = [
-    { name: "Fresh Lime", role: "$22.00", image: "/food1.png" },
-    { name: "Fresh Lime", role: "$22.00", image: "/food2.png" },
-    { name: "Fresh Lime", role: "$22.00", image: "/food3.png" },
-    { name: "Fresh Lime", role: "$22.00", image: "/food4.png" },
-    { name: "Fresh Lime", role: "$22.00", image: "/food1.png" },
-    { name: "Fresh Lime", role: "$22.00", image: "/food2.png" },
-    { name: "Fresh Lime", role: "$22.00", image: "/food3.png" },
-    { name: "Fresh Lime", role: "$22.00", image: "/food4.png" },
-    { name: "Fresh Lime", role: "$22.00", image: "/food2.png" },
-    { name: "Fresh Lime", role: "$22.00", image: "/food4.png" },
-    { name: "Fresh Lime", role: "$22.00", image: "/food3.png" },
-    { name: "Fresh Lime", role: "$22.00", image: "/food1.png" },
-  ];
-
   return (
     <div>
       <Nav2 />
       <HeroLinks heading="Our Shop" url1="Home" url2="Shop" />
 
-      <div className="py-20 px-10 max-w-[1320px] mx-auto mt-10">
-        {" "}
-        {/* Adding mt-20 for margin top */}
-        {/* Grid with responsive columns */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6">
-          {chefs.map((chef, index) => (
-            <div
-              key={index}
-              className={`relative overflow-hidden rounded-lg bg-white flex flex-col transition-transform transform hover:scale-105 hover:shadow-xl ${
-                index === 6
-                  ? "border-4 border-purple-600" // Complete purple border for the 7th box
-                  : "border-4 border-transparent hover:border-purple-600" // Hover effect for other boxes
-              }`}
-            >
-              {/* Chef Image */}
-              <div className="flex-1">
-                <Image
-                  src={chef.image}
-                  alt={chef.name}
-                  width={1000}
-                  height={1000}
-                  className="w-full h-full object-cover rounded-t-lg"
-                />
+      <div className="py-20 px-10 max-w-[1320px] mx-auto sm:mt-10 mt-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
+          {products.map((p) => (
+            <Link key={p.id} href={`/shop/${p.id}`}>
+              <div>
+                <div className="flex-1">
+                  <Image
+                    src={p.image[0]}
+                    alt={p.name}
+                    width={1000}
+                    height={1000}
+                    className="w-full h-full object-cover rounded-t-lg"
+                  />
+                </div>
+                <div className="p-4 text-center">
+                  <h3 className="text-gray-800 font-bold text-lg">
+                    {p.name}
+                  </h3>
+                  <p className="text-gray-600">{p.role}</p>
+                </div>
               </div>
-
-              {/* Static Information Section Below Image */}
-              <div className="p-4 text-center">
-                <h3 className="text-gray-800 font-bold text-lg">{chef.name}</h3>
-                <p className="text-gray-600">{chef.role}</p>
-              </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

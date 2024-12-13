@@ -73,7 +73,7 @@ const Nav2 = () => {
                 </div>
               </SheetTrigger>
               <SheetContent>
-                <div className="mt-28">
+                <div className="mt-20">
                   <div className="flex justify-center items-center gap-5 mb-10">
                     <Link href={"/shop/shopingCart"}>
                       <ShoppingBagIcon className=" w-10" />
@@ -90,7 +90,7 @@ const Nav2 = () => {
                       <IoSearch className="absolute top-2 right-4 text-2xl" />
                     </div>
                   </div>
-                  <ul className="flex flex-col text-xl gap-10">
+                  <ul className="flex flex-col text-xl gap-7">
                     <li>
                       <Link href={"/"}>Home</Link>
                     </li>

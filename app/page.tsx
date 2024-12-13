@@ -21,11 +21,11 @@ export default function Home() {
       <section className=" px-4 md:px-[135px] max-w-[1320px] mx-auto py-[50px]">
         {/* Heading Section */}
         <div className="flex flex-col justify-center items-center text-center">
-          <h1 className="text-[24px] md:text-[32px] font-normal text-[#FF9F0D] font-greatVibes whitespace-nowrap">
+          <h1 className="text-[24px] Headdesign md:text-[32px] font-normal text-[#FF9F0D] font-greatVibes whitespace-nowrap">
             Chefs
           </h1>
-          <h2 className="text-[20px] md:text-[50px] font-bold text-white whitespace-nowrap md:whitespace-normal mt-2">
-            <span className="text-[#FF9F0D]">Me</span>et Our Chef
+          <h2 className="lg:text-5xl md:text-4xl text-3xl font-bold text-white whitespace-nowrap md:whitespace-normal mt-2">
+            <span className="text-[#FF9F0D] ">Me</span>et Our Chef
           </h2>
         </div>
 
@@ -84,6 +84,22 @@ export default function Home() {
 
       <Review />
 
+      <section>
+        <div className="lg:h-[558px] md:h-[400px] h-[270px] bg-[url('/bg3.png')] bg-cover bg-center">
+          <div className="flex flex-col items-end lg:px-60 lg:py-32 md:px-32 md:py-20 sm:px-20 sm:py-10 px-10 py-5">
+            <h1 className="Headdesign text-textp lg:text-4xl md:text-3xl text-xl">Restaurant Active Process</h1>
+            <h2 className="text-end lg:text-5xl md:text-4xl sm:text-2xl text-xl lg:py-8 md:py-6 py-2 Headings"><span className="text-textp">We</span> Document Every Food <br />
+            Bean Process untile it is saved</h2>
+            <p className="text-end md:text-base text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque <br /> bibendum non dui volutpat fringilla bibendum. Urna, elit augue urna, </p>
+          </div>
+        </div>
+
+        {/* <div className="w-full h-[558px]">
+          <Image src={"/bg3.png"} width={1000} height={1000} />
+        </div> */}
+
+
+      </section>
     </div>
   );
 }

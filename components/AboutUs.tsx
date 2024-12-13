@@ -11,7 +11,7 @@ function AbountUs() {
       <div className="mx-auto w-full grid gap-10 items-center lg:px-4 md:px-12 px-5 grid-cols-1 lg:grid-cols-2">
         {/* Heading */}
         <div className="text-white md:text-start text-center mx-auto ">
-          <h1 className="md:text-[32px] text-[20px] font-normal text-[#FF9F0D] font whitespace-nowrap font-greatVibes ">
+          <h1 className="md:text-[32px] text-[20px] Headdesign font-normal text-[#FF9F0D] font whitespace-nowrap font-greatVibes ">
             About us
           </h1>
 

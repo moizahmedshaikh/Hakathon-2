@@ -30,9 +30,9 @@ const Menu = () => {
 
         {/* Menu Content */}
         <div className="w-full lg:w-1/2">
-          <div className="flex items-center mb-6">
+          <div className="flex flex-col gap-2 mb-6">
             <Coffee className="text-[#FF9F0D] mr-2" size={24} />
-            <h2 className="text-2xl font-semibold">Starter Menu</h2>
+            <h2 className="md:text-5xl text-3xl font-bold text-black">Starter Menu</h2>
           </div>
           <div className="space-y-8">
             {menuItems.map((item, index) => (
@@ -70,9 +70,9 @@ const Menu = () => {
 
         {/* Menu Content */}
         <div className="w-full lg:w-1/2">
-          <div className="flex items-center mb-6">
+        <div className="flex flex-col gap-2 mb-6">
             <Coffee className="text-[#FF9F0D] mr-2" size={24} />
-            <h2 className="text-2xl font-semibold">Main Course</h2>
+            <h2 className="md:text-5xl text-3xl font-bold text-black">Starter Menu</h2>
           </div>
           <div className="space-y-8">
             {MainCoursItem.map((item, index) => (
@@ -110,9 +110,9 @@ const Menu = () => {
 
         {/* Menu Content */}
         <div className="w-full lg:w-1/2">
-          <div className="flex items-center mb-6">
+        <div className="flex flex-col gap-2 mb-6">
             <Coffee className="text-[#FF9F0D] mr-2" size={24} />
-            <h2 className="text-2xl font-semibold">Dessert</h2>
+            <h2 className="md:text-5xl text-3xl font-bold text-black">Starter Menu</h2>
           </div>
           <div className="space-y-8">
             {menuItems.map((item, index) => (
@@ -144,9 +144,9 @@ const Menu = () => {
 
         {/* Menu Content */}
         <div className="w-full lg:w-1/2">
-          <div className="flex items-center mb-6">
+        <div className="flex flex-col gap-2 mb-6">
             <Coffee className="text-[#FF9F0D] mr-2" size={24} />
-            <h2 className="text-2xl font-semibold">Drinks</h2>
+            <h2 className="md:text-5xl text-3xl font-bold text-black">Starter Menu</h2>
           </div>
           <div className="space-y-8">
             {DrinksItem.map((item, index) => (

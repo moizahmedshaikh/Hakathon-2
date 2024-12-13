@@ -10,7 +10,7 @@ const MenuSec = () => {
   return (
     <div className="container mx-auto pb-40 ">
       <div className="space-y-4 w-fit mx-auto text-center">
-        <p className="text-textp Headdesign">Choose & Pick</p>
+        <p className="text-textp text-2xl Headdesign">Choose & Pick</p>
         <h2 className="text-4xl md:text-5xl font-bold Headings">
           <span className="text-textp">Fr</span>om Our Menu
         </h2>
