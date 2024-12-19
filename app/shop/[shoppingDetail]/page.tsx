@@ -20,6 +20,8 @@ const ShopDetails = ({ params }: { params: { shoppingDetail: string } }) => {
     data?.image || [] // Default to empty array if product data not found
   );
 
+  
+
   return (
     <div>
       <Nav2 />

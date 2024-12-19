@@ -1,3 +1,4 @@
+"use client"
 import HeroLinks from '@/components/HeroLinks'
 import Nav2 from '@/components/Nav2'
 import React from 'react'
@@ -12,7 +13,7 @@ const SignIn = () => {
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="bg-white w-[424px] p-6 rounded-lg shadow-md">
         <h2 className="text-2xl Headings font-semibold text-gray-800 mb-6">Sign In</h2>
-        <form className="space-y-4">
+        <form onSubmit={(e)=>{e.preventDefault()}} className="space-y-4">
           {/* Email Field */}
           <div>
             <label htmlFor="email" className="sr-only">Email</label>

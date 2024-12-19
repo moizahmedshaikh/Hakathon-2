@@ -7,10 +7,11 @@ import Link from "next/link";
 import Image from "next/image";
 import Review from "@/components/Review";
 import FoodSection from "@/components/FoodSection";
+import BlogPage from "@/components/BlogPage";
 
 export default function Home() {
   return (
-    <div className="bg-[#0D0D0DF2]">
+    <div className="bg-[#0D0D0D]">
       <Navbar />
       <Hero />
       <AbountUs />
@@ -87,18 +88,25 @@ export default function Home() {
       <section>
         <div className="lg:h-[558px] md:h-[400px] h-[270px] bg-[url('/bg3.png')] bg-cover bg-center">
           <div className="flex flex-col items-end lg:px-60 lg:py-32 md:px-32 md:py-20 sm:px-20 sm:py-10 px-10 py-5">
-            <h1 className="Headdesign text-textp lg:text-4xl md:text-3xl text-xl">Restaurant Active Process</h1>
-            <h2 className="text-end lg:text-5xl md:text-4xl sm:text-2xl text-xl lg:py-8 md:py-6 py-2 Headings"><span className="text-textp">We</span> Document Every Food <br />
-            Bean Process untile it is saved</h2>
-            <p className="text-end md:text-base text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque <br /> bibendum non dui volutpat fringilla bibendum. Urna, elit augue urna, </p>
+            <h1 className="Headdesign text-textp lg:text-4xl md:text-3xl text-xl">
+              Restaurant Active Process
+            </h1>
+            <h2 className="text-end lg:text-5xl md:text-4xl sm:text-2xl text-xl lg:py-8 md:py-6 py-2 Headings">
+              <span className="text-textp">We</span> Document Every Food <br />
+              Bean Process untile it is saved
+            </h2>
+            <p className="text-end md:text-base text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              diam pellentesque <br /> bibendum non dui volutpat fringilla
+              bibendum. Urna, elit augue urna,{" "}
+            </p>
           </div>
         </div>
 
         {/* <div className="w-full h-[558px]">
           <Image src={"/bg3.png"} width={1000} height={1000} />
         </div> */}
-
-
+        <BlogPage/>
       </section>
     </div>
   );

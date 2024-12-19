@@ -37,7 +37,8 @@ const Nav2 = () => {
               <Link href={"/blog"}>Blog</Link>
             </li>
             <li>
-              <Link href={"/pages"}>Pages</Link>
+            <Link href={"/FAQ"}>Faq</Link>
+
             </li>
             <li className="flex items-center">
               <Link href={"/about"}>About</Link>
@@ -57,11 +58,11 @@ const Nav2 = () => {
 
         <div className=" flex items-center gap-2 ">
           <div className="flex gap-3 items-center">
-            <IoSearch className=" text-white w-6 lg:block hidden" />
+            <IoSearch size={25} className=" text-white w-6 lg:block hidden" />
             <Link href={"/signin"}>
               <UserIcon className=" text-white w-6 lg:block hidden" />
             </Link>
-            <Link href={"/shop/shopingCart"}>
+            <Link href={"/shopingCart"}>
               <ShoppingBagIcon className="text-white w-6 lg:block hidden" />
             </Link>
           </div>
@@ -75,7 +76,7 @@ const Nav2 = () => {
               <SheetContent>
                 <div className="mt-20">
                   <div className="flex justify-center items-center gap-5 mb-10">
-                    <Link href={"/shop/shopingCart"}>
+                    <Link href={"/shopingCart"}>
                       <ShoppingBagIcon className=" w-10" />
                     </Link>
                     <Link href={"/signin"}>
@@ -101,7 +102,8 @@ const Nav2 = () => {
                       <Link href={"/blog"}>Blog</Link>
                     </li>
                     <li>
-                      <Link href={"/pages"}>Pages</Link>
+                    <Link href={"/FAQ"}>Faq</Link>
+
                     </li>
                     <li className="flex items-center">
                       <Link href={"/about"}>About</Link>

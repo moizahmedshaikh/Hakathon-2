@@ -7,7 +7,7 @@ const FAQpage = () => {
   return (
     <div> 
       <Nav2/>
-      <HeroLinks heading='Faq Page' url1='Home' url2='About'/>
+      <HeroLinks heading='Faq Page' url1='Home' url2='Faq'/>
       <FAQPage />
     </div>
   )

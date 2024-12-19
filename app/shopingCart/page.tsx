@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Nav2 from '@/components/Nav2';
 import HeroLinks from '@/components/HeroLinks';
+import Link from 'next/link';
 
 const initialCartItems = [
   { name: "Burger", price: 10.99, quantity: 2, image: "/cart1.png" },
@@ -136,7 +137,7 @@ const ShoppingCart: React.FC = () => {
                 <span>${totalAmount.toFixed(2)}</span>
               </div>
               <button className="w-full bg-orange-500 text-white mt-4 py-3 rounded font-semibold">
-                Proceed to Checkout
+                <Link href={"/checkout"}>Proceed to Checkout</Link>
               </button>
             </div>
           </div>

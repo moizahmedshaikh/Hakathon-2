@@ -12,7 +12,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const Navbar = () => {
   return (
-    <nav className="max-w-[1320px] mx-auto pt-10 md:px-7 px-4">
+    <nav className="max-w-[1320px] mx-auto pt-8 md:px-7 px-4">
       <div className="pb-3">
         <h1 className="font-[700] hidden lg:block text-center text-[34px] leading-[34px]">
           <span className="text-textp">Food</span>tuck
@@ -32,7 +32,7 @@ const Navbar = () => {
               <Link href={"blog"}>Blog</Link>
             </li>
             <li>
-              <Link href={"pages"}>Pages</Link>
+              <Link href={"/FAQ"}>Faq</Link>
             </li>
             <li className="flex items-center">
               <Link href={"/about"}>About</Link>
@@ -59,7 +59,7 @@ const Navbar = () => {
             />
             <IoSearch className="absolute top-2 right-4 text-2xl" />
           </div>
-          <Link href={"/shop/shopingCart"}>
+          <Link href={"/shopingCart"}>
             <ShoppingBagIcon className="text-white w-6 lg:block hidden" />
           </Link>
           <div>
@@ -72,7 +72,7 @@ const Navbar = () => {
               <SheetContent>
                 <div className="mt-20">
                   <div className="flex justify-center gap-5 mb-10">
-                    <Link href={"/shop/shopingCart"}>
+                    <Link href={"/shopingCart"}>
                       <ShoppingBagIcon className=" w-10" />
                     </Link>
 
@@ -96,7 +96,8 @@ const Navbar = () => {
                       <Link href={"/blog"}>Blog</Link>
                     </li>
                     <li>
-                      <Link href={"/pages"}>Pages</Link>
+              <Link href={"/FAQ"}>Faq</Link>
+                      
                     </li>
                     <li className="flex items-center">
                       <Link href={"/about"}>About</Link>
